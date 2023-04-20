@@ -6,6 +6,9 @@
 // Created on: April 2023
 // This file contains the JS functions for index.html
 
+//scene important statements
+import SplashScene from "./scenes/splashScene.js"
+
 /**
  *Start Phaser Game.
  */
