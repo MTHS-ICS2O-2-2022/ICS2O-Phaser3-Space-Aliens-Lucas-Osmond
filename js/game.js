@@ -7,7 +7,7 @@
 // This file contains the JS functions for index.html
 
 //scene important statements
-import SplashScene from "./scenes/splashScene.js"
+import SplashScene from "./splashScene.js"
 
 /**
  *Start Phaser Game.
