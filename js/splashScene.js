@@ -9,12 +9,12 @@
 /**
  * This class is the splash scene.
  */
-class TitleScene extends Phaser.Scene {
+class SplashScene extends Phaser.Scene {
   /**
    * This method is the constructor.
    */
   constructor() {
-    super({ key: 'TitleScene' })
+    super({ key: 'SplashScene' })
   }
   
   /**
@@ -31,7 +31,7 @@ class TitleScene extends Phaser.Scene {
    * Use it to load assets
     */
   preload() {
-    console.log('Title Scene')
+    console.log('Splash Scene')
   }
 
   /**
@@ -50,8 +50,8 @@ class TitleScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
-    this.scene.switch ('TitleScene')
+    //pass
   }
 }
 
-export default TitleScene
+export default SplashScene
