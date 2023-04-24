@@ -50,7 +50,7 @@ class SplashScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
-    //pass
+    this.scene.switch ('TitleScene')
   }
 }
 
