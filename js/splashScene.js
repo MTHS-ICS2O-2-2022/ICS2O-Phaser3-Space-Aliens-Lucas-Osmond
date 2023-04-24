@@ -9,12 +9,12 @@
 /**
  * This class is the splash scene.
  */
-class SplashScene extends Phaser.Scene {
+class TitleScene extends Phaser.Scene {
   /**
    * This method is the constructor.
    */
   constructor() {
-    super({ key: 'SplashScene' })
+    super({ key: 'TitleScene' })
   }
   
   /**
@@ -31,7 +31,7 @@ class SplashScene extends Phaser.Scene {
    * Use it to load assets
     */
   preload() {
-    console.log('Splash Scene')
+    console.log('Title Scene')
   }
 
   /**
@@ -54,4 +54,4 @@ class SplashScene extends Phaser.Scene {
   }
 }
 
-export default SplashScene
+export default TitleScene
