@@ -4,31 +4,24 @@
 //
 // Created by: Lucas Osmond
 // Created on: April 2023
-//This is the Splash Scene
+//This is the Menu Scene
 
 /**
- * This class is the splash scene.
+ * This class is the Menu scene.
  */
-class TitleScene extends Phaser.Scene {
+class MenuScene extends Phaser.Scene {
   /**
    * This method is the constructor.
    */
   constructor() {
-    super({ key: 'TitleScene' })
-
-    this.titleSceneBackroundImage = null
-    this.titleSceneText = null
-    this.titleSceneTextStyle = { 
-      font: '200px Times',
-      fill: '#000000',
-      qalign: 'center'
-    }
+    super({ key: 'menuScene' })
   }
   
   /**
    * Can be defined on your own Scenes.
    * This method is called when the Scene is started by the SceneManager.
    *before preload() and create().
+   * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start()
     */
   init() {
     this.cameras.main.setBackgroundColor('#ffffff')
@@ -39,8 +32,7 @@ class TitleScene extends Phaser.Scene {
    * Use it to load assets
     */
   preload() {
-    console.log('Title Scene')
-    this.load.image('titleSceneBackroundImage', './assets/titleSceneImage.png')
+    console.log('Menu Scene')
   }
 
   /**
@@ -49,15 +41,7 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start()
    */
   create(data) {
-    this.titleSceneBackroundImage = this.add
-    .sprite(0, 0, 'titleSceneBackroundImage')
-    this.titleSceneBackroundImage.x = 1920 / 2
-    this.titleSceneBackroundImage.y = 1080 / 2
-
-    this.titleSceneText = this.add
-    .text(
-      1920 / 2, 1080 / 2 + 350, 'Space Aliens, this.titleSceneTextStyle')
-    setOrigin(0.5)
+    //pass
   }
   
   /**
@@ -71,4 +55,4 @@ class TitleScene extends Phaser.Scene {
   }
 }
 
-export default TitleScene
+export default MenuScene
