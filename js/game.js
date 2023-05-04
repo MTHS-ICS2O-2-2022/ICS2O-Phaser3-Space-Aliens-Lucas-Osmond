@@ -45,10 +45,10 @@ console.log(game)
 
 // load the scenes
 // NOTE: remember any "key" is global and CAN NOT be reused
-game.scene.add('SplashScene', splashScene)
-game.scene.add("TitleScene", titleScene)
-game.scene.add("MenuScene", menuScene)
-game.scene.add("GameScene", gameScene)
+game.scene.add('splashScene', splashScene)
+game.scene.add("titleScene", titleScene)
+game.scene.add("menuScene", menuScene)
+game.scene.add("gameScene", gameScene)
 
 // start the game
 game.scene.start('SplashScene')
