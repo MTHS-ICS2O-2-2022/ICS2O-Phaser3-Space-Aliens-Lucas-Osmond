@@ -46,7 +46,7 @@ class MenuScene extends Phaser.Scene {
   
   /**
    * Should be overridden on your own Scenes.
-   * This method is called once per game step while the scene is running.
+   * This method is called once per game step  while the scene is running.
    * @param {number} time - The current time.
    * @param {number} delta - The delta time in ms since the last frame.
    */

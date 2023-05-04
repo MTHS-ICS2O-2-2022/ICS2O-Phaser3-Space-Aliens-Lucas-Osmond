@@ -1,6 +1,6 @@
 /* global Phaser */
 
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2023   Lucas Osmond All rights reserved
 //
 // Created by: Lucas Osmond
 // Created on: April 2023

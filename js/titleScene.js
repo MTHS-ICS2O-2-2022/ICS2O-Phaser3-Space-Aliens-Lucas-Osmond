@@ -20,7 +20,7 @@ class TitleScene extends Phaser.Scene {
     this.titleSceneText = null
     this.titleSceneTextStyle = { 
       font: '200px Times',
-      fill: '#000000',
+      fill: '#fde4b9',
       qalign: 'center'
     }
   }
@@ -40,7 +40,7 @@ class TitleScene extends Phaser.Scene {
     */
   preload() {
     console.log('Title Scene')
-    this.load.image('titleSceneBackroundImage', './assets/titleSceneImage.png')
+    this.load.image('titleSceneBackroundImage', './assets/aliens_screen_image.jpg')
   }
 
   /**
@@ -50,14 +50,14 @@ class TitleScene extends Phaser.Scene {
    */
   create(data) {
     this.titleSceneBackroundImage = this.add
-    .sprite(0, 0, 'titleSceneBackroundImage')
+    .sprite(0, 0, 'titleSceneBackroundImage').setScale(2.75)
     this.titleSceneBackroundImage.x = 1920 / 2
     this.titleSceneBackroundImage.y = 1080 / 2
 
     this.titleSceneText = this.add
     .text(
-      1920 / 2, 1080 / 2 + 350, 'Space Aliens, this.titleSceneTextStyle')
-    setOrigin(0.5)
+      1920 / 2, 1080 / 2 + 350, 'Space Aliens', this.titleSceneTextStyle)
+    .setOrigin(0.5)
   }
   
   /**
