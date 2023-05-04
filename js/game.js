@@ -10,11 +10,13 @@
 import SplashScene from "./splashScene.js"
 import TitleScene from "./titleScene.js"
 import MenuScene from "./menuScene.js"
+import GameScene from "./gameScene.js"
 
 // create the new scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
 const menuScene = new MenuScene()
+const gameScene = new GameScene()
 /**
  *Start Phaser Game.
  */
@@ -46,6 +48,7 @@ console.log(game)
 game.scene.add('SplashScene', splashScene)
 game.scene.add("TitleScene", titleScene)
 game.scene.add("MenuScene", menuScene)
+game.scene.add("GameScene", gameScene)
 
 // start the game
 game.scene.start('SplashScene')
