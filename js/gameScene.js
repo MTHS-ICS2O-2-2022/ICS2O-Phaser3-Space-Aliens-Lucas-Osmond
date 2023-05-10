@@ -60,7 +60,35 @@ class GameScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms since the last frame.
    */
   update(time, delta) {
-    //pass
+    const keyLeftObj = this.input.keyboard.addKey('LEFT')
+    const keyRightObj = this.input.keyboard.addKey('RIGHT')
+    const keyUpObj = this.input.keyboard.addKey('UP')
+    const keyDownObj = this.input.keyboard.addKey('DOWN')
+
+    if (keyLeftObj.isDown === true) {
+      this.ship.x -= 15
+      if (this.ship.x < 0) {
+        this.ship.x = 0
+      }
+    }
+    if (keyRightObj.isDown === true) {
+      this.ship.x += 15
+      if (this.ship.x > 1920) {
+        this.ship.x = 1920
+      }
+    }
+    if (keyUpObj.isDown === true) {
+      this.ship.y -= 15
+      if (this.ship.y < 0) {
+        this.ship.y = 0
+      }
+    }
+    if (keyDownObj.isDown === true) {
+      this.ship.y += 15
+      if (this.ship.y > 1080) {
+        this.ship.y = 1080
+      }
+    }
   }
 }
 
